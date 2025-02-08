@@ -47,6 +47,18 @@
             width: 100%;
         }
     </style>
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Menyesuaikan jumlah kolom */
+    gap: 10px; /* Jarak antar gambar */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%; /* Gambar mengisi lebar container */
+    height: auto; /* Menjaga rasio gambar */
+    border-radius: 10px; /* Sudut gambar melengkung */
+}
 </head>
 <body>
     <header>
@@ -60,7 +72,12 @@
     <section id="tentang">
         <h2>Tentang Dusun Labuhan Bua</h2>
         <p>Dusun Labuhan Bua terletak di Desa Pukat, Kec. Utan, Kab. Sumbawa, Provinsi Nusa Tenggara Barat [ NTB ] . Dusun ini memiliki keindahan alam yang memukau dan budaya yang kaya, termasuk salah satu tempat jual beli Ikan terbesar dipulau sumbawa, dikarenakan mayoritas masyarakat disini sebagai Nelayan dan juga Petani </p>
-        <img src="Labuhan bua1.jpg" alt="Pemuda Labuhan Bua" style="width: 100%; max-width: 600px; height: auto; border-radius: 10px; margin-top: 20px;">
+         <div class="gallery">
+        <img src="foto1.jpg" alt="Pemandangan Pantai Dusun Labuhan Bua">
+        <img src="foto2.jpg" alt="Aktivitas Masyarakat Dusun Labuhan Bua">
+        <img src="foto3.jpg" alt="Budaya Dusun Labuhan Bua">
+        <img src="foto4.jpg" alt="Kerajinan Tangan Dusun Labuhan Bua">
+    </div>
     </section>
     <section id="wisata">
         <h2>Potensi Wisata</h2>
